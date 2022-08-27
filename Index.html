@@ -36,20 +36,113 @@
     // Numbers
     var number1 = 455;
     var number2 = 76.34;
-    console.log(number1 + number2);
+    // console.log(number1 + number2);
 
-    // 5. String
+    // String
     var str1 = "This is string";
     var str2 = "This is also a string";
-    console.log(str1);
-    console.log(str2);
+    // console.log(str1);
+    // console.log(str2);
 
-    // 6. Objects
+    // Objects
     var marks = {
         sonu: 76,
         monu: 92,
         ravi: 45,
     }
-    console.log(marks);
+    // console.log(marks); 
+    
+    // Booleans
+    var a = true;
+    var b = false;
+    // console.log(a, b);
+
+    // Undefined
+    var und = undefined;
+    // console.log(und);
+
+    // Null
+    var n = null;
+    // console.log(n);
+
+    /* At a very high level, there are two type of data types in JavaScript
+    1. Primitive data types: Undefined, null,number, string, boolean, symbol
+    2. Reference data type: Arrayas and Objects
+    */
+
+    var arr = [1, 2, 3, "riya", 5, 4, "gift", 10];
+    // console.log(arr);
+
+    //------------- Operators in JavaScript-------------
+    // -----------Arithmetic Operators---------------
+    var a = 100;
+    var b = 20;
+    // console.log("The value of a + b is", a+b);
+    // console.log("The value of a - b is", a-b);
+    // console.log("The value of a * b is", a*b);
+    // console.log("The value of a / b is", a/b);
+
+    // ------------Assignment Operator---------------
+    var x = b;
+    x +=30;
+    x -=30;
+    x *=11;
+    x /=10;
+    // console.log(x);
+
+    // ------------Comparison Operators-------------
+    var x = 45;
+    var y = 20;
+    // console.log(x == y);
+    // console.log(x >= y);
+    // console.log(x <= y);
+    // console.log(x > y);
+    // console.log(x < y);
+
+    // -------------Logical Operators-------------
+    // -----------Logical and------------
+    // console.log(true && true);
+    // console.log(true && false);
+    // console.log(false && true);
+    // console.log(false && false);
+
+    // ------------Logical OR-------------
+    // console.log(true || true);
+    // console.log(true || false);
+    // console.log(false || true);
+    // console.log(false || false);
+
+    // ------------Logical not-----------
+    // console.log(!true);
+    // console.log(!false);
+
+    // ----------Function in JavaScript----------
+    function avg(a, b){
+        c = (a + b)/2;
+        return c;
+    }
+
+    // DRY = Do not repeat yourself
+    c1 = avg(4, 6);
+    c2 = avg(20, 21);
+    // console.log(c1, c2);
+
+    // --------Conditonals in JavaScript------------
+    var age = 4;
+
+    // Single if statement
+    if(age > 8){
+        console.log('You can soft drink water');
+    }
+
+    // If - else statement
+    if(age > 8){
+        console.log('You can soft drink water');
+    }
+    else{
+        console.log('You cannot soft drink water');
+    }
+
+
 </script>
 </html>
