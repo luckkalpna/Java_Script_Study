@@ -8,46 +8,103 @@
 </head>
 <body>
     <h1>Hello World</h1>
-    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure impedit exercitationem fugiat cum fugit non facere magni officiis modi illum!</div>
+    <div class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sit rerum nihil necessitatibus saepe magni voluptas aliquam, iste repellat quas.</div>
 </body>
-
 <script>
-    console.log("Hello every one my self anjali.")
+    // let a = "Ansh";
+    // let b = 2;
+    // console.log(a + b);
 
-    // let a = 35;
-    // console.log(a);
-    // a = "kajal"
-    // console.log(a)
+    // console.log(typeof (a+b));
 
-    // let b = "boy";
-    // b = 20;
-    // console.log(b);
-    // {
-    //     let b = "boy";
-    //     console.log(b);
-    // }
+    // --------------Constant Variables------------- 
+    const a1 = {
+        name: "Ayush",
+        section: 2,
+        isprinciple: false
+    }
+    a1['friend'] = "Vinay"
+    a1['name'] = "Ankit"
+    a1['section'] = 5
+    a1['isprinciple'] = true
+    a1['bird'] = "peacock"
+    // console.log(a1)
 
-    // nn bb ss u
-    let a = null;
-    let b = 345;
-    let c = true
-    let d = BigInt("567") + BigInt("3") + BigInt("10")
-    let e = "string"
-    // let f = symbol("That is a symbol")
-    // let g = undefined
-    console.log(a, b, c, d, e);
-    let g = undefined
-    console.log(g);
-    let k = sy('this is a symbol')
-    console.log(k)
-    console.log(typeof c)
+    // ------------Dictatonary----------
+    const dict = {
+        appreciate: "recognize the full worth of.",
+        beautiful: "pleasing the senses or mind aesthetically.",
+        conscientious: "wishing to do one.",
+        definitely: "without doubt (use for emphasis).",
+        emoji: "emoji; plural noun: emojis.",
+    }
+    // console.log(dict);
 
-    // Variations
-    var favoriteFood = 'pizza'
-var numOfSlices = 8
-var numOfSlices = 10
-console.log()
-var favoriteFood = 'pizza'
-console.log(favoriteFood)
+    // ----------Arithematic Operators----------
+    let a = 45;
+    let b = 4;
+    // console.log('a + b =', a+b);
+    // console.log('a - b =', a-b);
+    // console.log('a / b =', a/b);
+    // console.log('a * b =', a*b);
+    // console.log('a ** b =', a**b);
+    // console.log('a % b =', a%b);
+    // console.log('++a =', ++a);
+    // console.log('a =', a);
+    // console.log('a++ =', a++);
+    // console.log('a =', a);
+    // console.log('--a =', --a);
+    // console.log('a =', a);
+    // console.log('a-- =', a--);
+    // console.log('a =', a);
+
+    // -----------Assignment Operators-----------
+    let assignment = 100;
+    // assignment += 5
+    // console.log("a is now =", a)
+    // assignment -= 8
+    // console.log("a is now =", a)
+    // assignment *= 10
+    // console.log("a is now =", a)
+    // assignment /= 15
+    // console.log("a is now =", a)
+
+    // ----------Comparison Operators------------
+    let comp1 = 6
+    let comp2 = 7
+    // console.log("comp1 == comp2 is", comp1==comp2)
+    // console.log("comp1 != comp2 is", comp1!=comp2)
+    // console.log("comp1 === comp2 is", comp1===comp2)
+    // console.log("comp1 !== comp2 is", comp1!==comp2)
+
+    // -----------Logiocal Opearots-------------
+    let x = 5
+    let y = 6
+    // console.log(x<y && x==5)
+    // console.log(x>y || x==5)
+    // console.log(!true)
+    // console.log(!false)
+
+    let A = prompt("Hey! What's your age?"); // Asking a question
+    // console.log(typeof A);
+    // alert("Warning"); // As type of warning
+    a = Number.parseInt(A)
+    console.log(typeof A)
+
+    if(a<0){
+        alert("This is an valid age");
+    }
+    else if(a<9){
+        alert("You can't think driving");
+    }
+    else if(a<18 && a>=9){
+        alert("You can't think driving");
+    }
+    else{
+        alert("You can driving you are above 18");
+    }
+
+    // ---------Ternory Operators----------
+    console.log("You can", (a<18? "not drive" : "drive"))
 </script>
 </html>
