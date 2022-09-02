@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // -----------Functions------------
+    /*
+    function forAvgValue(x, y){
+        return  1 + (x +y) / 2;
+    }
+    const sum = (p, q)=>{ // Short method to run a is called arrow function
+        return p + q;
+    }
+
+    let a = 1;
+    let b = 2; 
+    let c = 3;
+
+    console.log("for Average value of a and b is ", forAvgValue(a,b));
+    console.log("for Average value of b and c is ", forAvgValue(b,c));
+    console.log("for Average value of a and c is ", forAvgValue(a,c));
+    console.log(sum(21, 4));
+    */
+
+    //                     PRACTICE
+    // for loop
+
+    let marks = {
+        anjali: 20,
+        brist: 30,
+        chandni: 40,
+        deepak: 10,
+    }
+    for(let i=0;i<Object.keys(marks).length;i++){
+        console.log("The marks of " + Object.keys(marks)[i] + " " + "are " + marks[Object.keys(marks)[i]]);
+    }
+
+    // In loop
+
+    for(let key in marks){
+        console.log("The marks of " + key + " " + "are " + marks[key]);
+    }
+
+    //while loop
+
+    let cn = 45;
+    let i 
+    while (i != cn){
+        i = prompt("Enter a number")
+        console.log("Try again");
+    }
+    console.log("You have entered a correct number");
+
+    // function
+
+    let mean = (a, b, c ,d)=>{
+        return (a+ b+ c+ d) / 4;
+    }
+    console.log(mean(3, 8, 6, 9));
+
+</script>
+</html>
