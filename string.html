@@ -25,11 +25,13 @@
     */
 
     // ---------Template literals-----------
+    /*
     let boy1 = "Pradeep";
     let boy2 = "Kartik";
     let sentence = `${boy2} is a friend of ${boy1}`;
     console.log(sentence);
     console.log(boy1, "is a friend of", boy2);
+    */
 
     //-----------Escape sequence characters-------------
     let fruit = 'Bana\'na';
@@ -57,6 +59,26 @@
         // Runs 5 times, with values of step 0 through 4.
         console.log('Walking east one step');
     }
+
+    // ------------Practice------------
+    let str = "Har\"";
+    console.log(str.length);
+
+    const sentence = "The quick brown fox jumps over the lazy dog";
+    const word = "fox";
+    console.log(sentence.includes(word));
+    console.log(`The word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in the sentence`);
+
+    let para = "Hello Everyone how are you";
+    let wish = "Everyone";
+    console.log(para.includes(wish));
+    console.log(`This word "${wish}" ${para.includes(wish) ? 'is' : 'is not'} in the sentence`);
+
+    let str2 = "Please give Rs 1000";
+    // let amount = Number.parseInt(str2.slice(15)); // change into number to a string.
+    let amount = str2.slice(12); // this is only for string. 
+    console.log(amount);
+    console.log(typeof amount);
 
 
 </script>
