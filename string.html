@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    /*
+    let name = "Harshita";
+    console.log(name);
+    console.log(name.length);
+    let myfriend = "Universe";
+    console.log(myfriend[0]);
+    console.log(myfriend[1]);
+    console.log(myfriend[2]);
+    console.log(myfriend[3]);
+    */
+
+    // ---------Template literals-----------
+    let boy1 = "Pradeep";
+    let boy2 = "Kartik";
+    let sentence = `${boy2} is a friend of ${boy1}`;
+    console.log(sentence);
+    console.log(boy1, "is a friend of", boy2);
+
+    //-----------Escape sequence characters-------------
+    let fruit = 'Bana\'na';
+    console.log(fruit);
+    console.log(fruit.length);
+
+    // ----------Methods---------
+    let name = "Rashmi";
+    console.log(name);
+    console.log(name.length);
+    console.log(name.toUpperCase());
+    console.log(name.toLowerCase());
+    console.log(name.replace("Ra", "Lak"));
+
+    // ------------Concat method------------ (for add many strings)
+    let friend = "Namandeep";
+    console.log(name.concat(" is a friend of ", friend, " Ok "));
+
+    // -------------Trim method--------------
+    let friend1 = "      Meena     ";
+    console.log(friend1);
+    console.log(friend1.trim());
+
+    for (let step = 0; step < 5; step++) {
+        // Runs 5 times, with values of step 0 through 4.
+        console.log('Walking east one step');
+    }
+
+
+</script>
+
+</html>
