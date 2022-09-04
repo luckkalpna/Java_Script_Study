@@ -32,9 +32,9 @@
     console.log(marks_class_12);
 
     // --------------Array Methods--------------
-    let num = [1, 2, 3, 54, 5]
-    let num_more = [11, 12, 13, 54, 15]
-    let num_even_more = [15, 25, 35, 545, 55]
+    // let num = [1, 2, 3, 54, 5]
+    // let num_more = [11, 12, 13, 54, 15]
+    // let num_even_more = [15, 25, 35, 545, 55]
     // let b = num;
         // let b = num.toString(); // to change a string into an object.
     // console.log(b, typeof b)
@@ -51,7 +51,30 @@
     // let r = num.unshift(30); // for unshift  a value.
     // console.log(num, r);
 
-    let newArray = num.concat(num_more, num_more_even);
-    console.log(newArray);
+    // let newArray = num.concat(num_more, num_more_even);
+    // console.log(newArray);
+
+    // ---------------Sort method--------------- // set into alfabatecials
+
+    // let num = [34, 65, 23, 5, 11, 19, 8, 4, 0];
+    // num.sort();
+    // console.log(num);
+
+    // compare method------set into decending order
+    // let compare = (a, b)=>{
+    //     return  b - a;
+    // }
+    // let num = [34, 65, 23, 5, 11, 19, 8, 4, 0];
+    // num.sort(compare);
+    // console.log(num);
+
+    // ------------Splice and Slice------------- (Splice)
+    let num = [2, 3, 4, 5, 6, 45, 32, 67, 89];
+    num.splice(2, 4, 2001, 2002, 2003, 2004);
+    console.log(num);
+
+    // -----------Slice------------
+    let newNum = num.slice(3);
+    console.log(newNum);
 </script>
 </html>
