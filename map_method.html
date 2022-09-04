@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map method</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    // -----------Array map method----------
+    let arr = [32, 84, 90]
+    // console.log(arr);
+    let a = arr.map((value, index, array)=>{
+        console.log(value, index, array)
+        return value +1
+    })
+    console.log(a);
+
+    // -----------Array filter method---------
+    let arr2 = [72, 64, 11,60];
+    // console.log(arr2);
+    let a2 = arr2.filter((a)=>{
+        return a < 70;
+    })
+    console.log(a2);
+
+    // -----------Array reduce method---------
+    let arr3 = [1, 3, 2, 6, 4, 5];
+    const newarr3 = arr3.reduce((h1, h2)=>{
+        return h1 + h2;
+    })
+    console.log(newarr3);
+</script>
+</html>
