@@ -4,10 +4,11 @@ const foodSound = new Audio('food.mp3');
 const gameOverSound = new Audio('game-over.mp3');
 const musicSound = new Audio('background.mp3');
 let speed = 2;
-lastPaintTime = 0;
+let lastPaintTime = 0;
 let snakeArr = [
     {x: 13, y: 15}
 ]
+food = {x: 6, y: 7};
 
 
 
@@ -32,25 +33,54 @@ function gameEngine(){
 
 
     // Part 2: Display the Snake and Food
-    board.innerHTML = "";
-    snakeArr.forEach((e, index)=>{
+    // Display the Snake
+        board.innerHTML = "";
+        snakeArr.forEach((e, index)=>{
         snakeElement = document.createElement('div');
-        snakeElement.classList.add('food');
         snakeElement.style.gridRowStart = e.y;
         snakeElement.style.gridColumnStart = e.x;
+        snakeElement.classList.add('snake');
+        if (index === 0){
+            snakeElement.classList.add('head');
+        }
         board.appendchild(snakeElement);
-    })
+    });
 
-
+    // Display the Snake
+    board.innerHTML = "";
+        snakeArr.forEach((e, index)=>{
+        foodElement = document.createElement('div');
+        foodElement.style.gridRowStart = food.y;
+        foodElement.style.gridColumnStart = food.x;
+        foodElement.classList.add('food');
+        board.appendchild(foodElement);
 }
 
-
-
-
-
-
-
-
-
-
 // Main Logics started here
+    window.requestAnimationFrame(Main);
+    window.addEventListener('keydown', e=>{
+        musicSound.play();
+        switch (e.key) {
+            case "Arrowup":
+            console.log("ArrowUp");
+            break;
+        }
+        switch (e.key) {
+            case "ArrowDown":
+            console.log("ArrowDown");
+            break;
+        }
+        switch (e.key) {
+            case "ArrowLeft":
+            console.log("ArrowLeft");
+            break;
+        }
+        switch (e.key) {
+            case "ArrowRight":
+            console.log("ArrowRight");
+            break;
+
+            default:
+            break;
+        }
+    });
