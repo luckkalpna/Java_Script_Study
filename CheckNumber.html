@@ -9,6 +9,9 @@
 </head>
 
 <script>
+
+                    // Using if else conditions
+
   // let a;
   // a = prompt("Enter a number");
 
@@ -24,14 +27,33 @@
   //   }
   // }
 
+                      // Using ternary operators
+
+// let a, str;
+// a = prompt("Enter a number");
+// if(isNaN(a) == false){
+//   a = Number(a);
+//   str = (a % 2) == 0 ? "Number is even" : "Number is odd";
+// }
+// else{
+//   str = "You enter did't a number";
+// }
+// document.write(`${str}`);
+
+                      // Using Switch case
+
 let a, str;
 a = prompt("Enter a number");
-if(isNaN(a) == false){
-  a = Number(a);
-  str = (a % 2) == 0 ? "Number is even" : "Number is odd";
-}
-else{
-  str = "You enter did't a number";
+a = Number(a);
+switch(a % 2){
+  case 0:
+    str = "No is even";
+    break;
+  case 1:
+    str = "No is odd"
+    break;
+  default:
+    str = "You didn't enter a number";
 }
 document.write(`${str}`);
 </script>
