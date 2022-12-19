@@ -43,20 +43,31 @@
 
                   // Create a blnak array
 
-let evens = new Array();
-evens[0] = 2;
-evens[1] = 4;
-evens[2] = 6;
-evens[3] = 8;
-evens[4] = 10;
-evens[5] = 12;
-evens[6] = 14;
-evens[7] = 16;
-evens[8] = 18;
-evens[9] = 20;
-document.write(`Array length is ${evens.length}<br>`);
-for( let x of evens)
-document.write(`${x}<br>`);
+// let evens = new Array();
+// evens[0] = 2;
+// evens[1] = 4;
+// evens[2] = 6;
+// evens[3] = 8;
+// evens[4] = 10;
+// evens[5] = 12;
+// evens[6] = 14;
+// evens[7] = 16;
+// evens[8] = 18;
+// evens[9] = 20;
+// document.write(`Array length is ${evens.length}<br>`);
+// for( let x of evens)
+// document.write(`${x}<br>`);
+
+                  // Reverse Array
+
+const arr = [10, 20, 30, 40, 50];
+document.write("Before revercing array:<br>");
+for( let x of arr)
+document.write(`${x} `);
+document.write("<br>After revercing array:<br>");
+arr.reverse();
+for( let x of arr)
+document.write(`${x} `);
 </script>
 
 </head>
