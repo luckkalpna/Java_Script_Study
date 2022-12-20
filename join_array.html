@@ -7,13 +7,26 @@
     <title>Join Arrya Methods</title>
 
 <script>
-    let name = ["Alka", "Binod", "Chandan", "Dharmender", "Eglu"];
-    let str = name.join();
-    document.write(`${str}`);
-    document.write("<br>");
-    str = name.join(" ");
-    document.write(`${str}`);
-    document.write(`<br>${name.toString()}`);
+
+                  // Araay join methods
+
+    // let name = ["Alka", "Binod", "Chandan", "Dharmender", "Eglu"];
+    // let str = name.join();
+    // document.write(`${str}`);
+    // document.write("<br>");
+    // str = name.join(" ");
+    // document.write(`${str}`);
+    // document.write(`<br>${name.toString()}`);
+
+                  // Array to find index of an array
+
+let name = ["Atul", "Birla", "Chandan", "Dev", "Etisha"];
+let search = prompt("Enter name to search");
+let position = name.indexOf(search);
+if(position != -1)
+document.write("position is " + (position + 1));  
+else
+document.write("Name not found");
 
 </script>
 
