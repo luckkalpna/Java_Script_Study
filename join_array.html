@@ -20,13 +20,24 @@
 
                   // Array to find index of an array
 
-let name = ["Atul", "Birla", "Chandan", "Dev", "Etisha"];
-let search = prompt("Enter name to search");
-let position = name.indexOf(search);
-if(position != -1)
-document.write("position is " + (position + 1));  
-else
-document.write("Name not found");
+// let name = ["Atul", "Birla", "Chandan", "Dev", "Etisha"];
+// let search = prompt("Enter name to search");
+// let position = name.indexOf(search);
+// if(position != -1)
+// document.write("position is " + (position + 1));  
+// else
+// document.write("Name not found");
+
+                  // In case of dual posotion
+
+let name = ["Atul", "Birla", "Chandan", "Atul", "Dev", "Etisha"];
+let pos = name.indexOf("Atul");
+document.write(`Atul is at index of ${pos}`);
+pos = name.indexOf("atul");
+document.write(`<br> atul is at index of ${pos}`);
+pos = name.indexOf("Atul", 2);
+document.write(`<br> After 2 index, Atul is at index of ${pos}`);
+
 
 </script>
 
