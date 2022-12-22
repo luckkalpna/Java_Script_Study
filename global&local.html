@@ -24,12 +24,23 @@ function f2(){
     alert("F1 global a is:" + window.a);
 }
 
+                  // Return value in function
+
+function addnos(x, y){
+  let z = x + y;
+  return z;
+}
+document.write(javascript);
+
 </script>
 
 </head>
 <body>
-    To call the function f1<a href="javascript:f1()">Click</a>here.
+    <!-- To call the function f1<a href="javascript:f1()">Click</a>here.
     <br>
-    To call the function f2<a href="javascript:f2()">Click</a>here.
+    To call the function f2<a href="javascript:f2()">Click</a>here. -->
+
+    <a href="javascript:(`Sum is: ${addnos(10, 20)}`)">Click me</a>
+
 </body>
 </html>
