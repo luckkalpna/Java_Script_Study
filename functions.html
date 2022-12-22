@@ -17,20 +17,29 @@
 // }
 // greetings("Anuj");
 
-function average(){
-  let sum = 0;
-  for( let n of arguments){
-    sum += n;
-  }
-  document.write(`<b>Sum is:<b/> ${sum}`);
-  document.write(`<br><b>Average is:</b> ${sum / arguments.length}`);
+                    // Find sum and average
+
+// function average(){
+//   let sum = 0;
+//   for( let n of arguments){
+//     sum += n;
+//   }
+//   document.write(`<b>Sum is:<b/> ${sum}`);
+//   document.write(`<br><b>Average is:</b> ${sum / arguments.length}`);
+// }
+// average(5, 10, 15, 20, 25, 30);
+
+                    // Show a function after on click
+
+function show(){
+  let x = new Date()
+  alert(x);
 }
-average(5, 10, 15, 20, 25, 30);
 
 </script>
 
 </head>
 <body>
-    
+  <a href="javascript: show()">Show Current Date & Time</a>
 </body>
 </html>
