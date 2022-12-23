@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval Concept</title>
+
+<script>
+
+var fnid;
+function showMessage(){
+  console.log(new Date());
+}
+function start(){
+  fnid = setInterval(showMessage, 2000);
+}
+function stop(){
+  clearInterval(fnid);
+}
+
+</script>
+
+</head>
+<body>
+  <input type="button" onclick="start()" value="start">
+  <input type="button" onclick="stop()" value="stop">
+</body>
+</html>
