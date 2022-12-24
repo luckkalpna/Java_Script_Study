@@ -21,11 +21,20 @@ function stop(){
   console.log("Stopped!");
 }
 
+let a = 10;
+function test(){
+  if(a > 5){
+    var msg = "Good Morning!";
+  }
+  document.write("Message = " + msg);
+}
+test();
+
 </script>
 
 </head>
 <body>
-  <input type="button" onclick="start()" value="start">
-  <input type="button" onclick="stop()" value="stop">
+  <!-- <input type="button" onclick="start()" value="start">
+  <input type="button" onclick="stop()" value="stop"> -->
 </body>
 </html>
