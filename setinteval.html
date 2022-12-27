@@ -12,38 +12,38 @@ var fnid;
 
 function start(){
   fnid = setInterval(function (){
-  console.log(new Date());
+  document.write(new Date());
 }, 1000);
 }
 
 function stop(){
   clearInterval(fnid);
-  console.log("Stopped!");
+  document.write("Stopped!");
 }
 
-let a = 10;
-function test(){
-  if(a > 5){
-    var msg = "Good Morning!";
-  }
-  document.write("Message = " + msg);
-}
-test();
+// let a = 10;
+// function test(){
+//   if(a > 5){
+//     var msg = "Good Morning!";
+//   }
+//   document.write("Message = " + msg);
+// }
+// test();
 
-let b = 20;
-function msg(){
-  if(b > 10){
-    var msg = "Good Night!";
-  }
-  document.write("Message = " + msg);
-}
-msg();
+// let b = 20;
+// function msg(){
+//   if(b > 10){
+//     var msg = "Good Night!";
+//   }
+//   document.write("Message = " + msg);
+// }
+// msg();
 
 </script>
 
 </head>
 <body>
-  <!-- <input type="button" onclick="start()" value="start">
-  <input type="button" onclick="stop()" value="stop"> -->
+  <input type="button" onclick="start()" value="start">
+  <!-- <input type="button" onclick="stop()" value="stop"> -->
 </body>
 </html>
