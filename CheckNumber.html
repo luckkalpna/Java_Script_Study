@@ -42,18 +42,30 @@
 
                       // Using Switch case
 
+// let a, str;
+// a = prompt("Enter a number");
+// a = Number(a);
+// switch(a % 2){
+//   case 0:
+//     str = "No is even";
+//     break;
+//   case 1:
+//     str = "No is odd"
+//     break;
+//   default:
+//     str = "You didn't enter a number";
+// }
+// document.write(`${str}`);
+
 let a, str;
-a = prompt("Enter a number");
-a = Number(a);
-switch(a % 2){
+a = prompt("enter a number");
+switch(a % 3){
   case 0:
-    str = "No is even";
-    break;
+  str = "Number is divisible by 3";
+  break;
   case 1:
-    str = "No is odd"
-    break;
-  default:
-    str = "You didn't enter a number";
+  str = "Number is not divisible by 3";
+  break;
 }
 document.write(`${str}`);
 </script>
