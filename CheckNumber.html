@@ -27,6 +27,22 @@
   //   }
   // }
 
+  // For checking a number
+
+  let a;
+  a = prompt("Enter a number");
+  if(isNaN(a))
+  document.write("Given input is not a number");
+  else{
+    let b = Number(a);
+    if(b % 2 === 0){
+      document.write("Number is even");
+    }
+    else{
+      document.write("Number is odd");
+    }
+  }
+
                       // Using ternary operators
 
 // let a, str;
@@ -57,17 +73,17 @@
 // }
 // document.write(`${str}`);
 
-let a, str;
-a = prompt("enter a number");
-switch(a % 3){
-  case 0:
-  str = "Number is divisible by 3";
-  break;
-  case 1:
-  str = "Number is not divisible by 3";
-  break;
-}
-document.write(`${str}`);
+// let a, str;
+// a = prompt("enter a number");
+// switch(a % 3){
+//   case 0:
+//   str = "Number is divisible by 3";
+//   break;
+//   case 1:
+//   str = "Number is not divisible by 3";
+//   break;
+// }
+// document.write(`${str}`);
 </script>
 
 <body>
