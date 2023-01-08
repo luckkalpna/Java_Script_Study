@@ -29,6 +29,19 @@
 // }
 // average(5, 10, 15, 20, 25, 30);
 
+
+// Find average value
+
+function average(){
+  let sum = 0;
+  for(let n of arguments){
+    sum += n;
+  }
+  document.write(`<b>Sum is :</b>${sum}`);
+  document.write(`<br><b>Average is :</b> ${sum / arguments.length}`);
+}
+average(5, 10, 15, 20, 25, 30);
+
                     // Show a function after on click
 
 function show(){
