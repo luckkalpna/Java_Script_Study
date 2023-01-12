@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice</title>
 </head>
+
 <body>
     <h1>Hello World</h1>
-    <div class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sit rerum nihil necessitatibus saepe magni voluptas aliquam, iste repellat quas.</div>
+    <div class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sit rerum nihil
+        necessitatibus saepe magni voluptas aliquam, iste repellat quas.</div>
 </body>
 <script>
     // let a = "Ansh";
@@ -91,20 +94,37 @@
     a = Number.parseInt(A)
     console.log(typeof A)
 
-    if(a<0){
+    if (a < 0) {
         alert("This is an valid age");
     }
-    else if(a<9){
+    else if (a < 9) {
         alert("You can't think driving");
     }
-    else if(a<18 && a>=9){
+    else if (a < 18 && a >= 9) {
         alert("You can't think driving");
     }
-    else{
+    else {
         alert("You can driving you are above 18");
     }
 
     // ---------Ternory Operators----------
-    console.log("You can", (a<18? "not drive" : "drive"))
+    // console.log("You can", (a<18? "not drive" : "drive"))
+
+    // Check a number whih is divisible by 4
+
+    let n;
+    n = prompt("Enter a number");
+    if (isNaN(n))
+        document.write("Given input is not a number");
+    else {
+        let x = Number(n);
+        if (x % 2 === 0) {
+            document.write("Number is even");
+        }
+        else {
+            document.write("Number is odd");
+        }
+    }
 </script>
+
 </html>
