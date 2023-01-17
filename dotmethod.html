@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create a object using dot method</title>
     <script>
-        let myCar = new Object();
-        myCar.name = "Jaguar";
-        myCar.color = "Vanta Black"
-        myCar.company = "Verna";
-        myCar.year = 2025;
-        console.log(myCar);
+        // let myCar = new Object();
+        // myCar.name = "Jaguar";
+        // myCar.color = "Vanta Black"
+        // myCar.company = "Verna";
+        // myCar.year = 2025;
+        // console.log(myCar);
 
         // Create a object with the help of Brackets
 
@@ -21,6 +21,24 @@
         myHouse["area"] = "3BHK";
         myHouse["year"] = 2030;
         console.log(myHouse);
+
+        // Deleting Property
+
+        let myCar = new Object();
+        myCar.name = "Jaguar";
+        myCar.color = "Vanta Black"
+        myCar.company = "Verna";
+        myCar.year = 2025;
+        console.log("Name:" + myCar.name);
+        console.log("Color:" + myCar.color);
+        console.log("Company:" + myCar.company);
+        console.log("year:" + myCar.year);
+
+        delete myCar.year;
+        console.log("name" in myCar);
+        console.log("color" in myCar);
+        console.log("company" in myCar);
+        console.log("year" in myCar);
     </script>
 </head>
 <body>
