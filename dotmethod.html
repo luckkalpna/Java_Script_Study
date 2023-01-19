@@ -48,6 +48,22 @@
         // console.log("color" in myCar);
         // console.log("company" in myCar);
         // console.log("year" in myCar);
+
+        let myCar = new Object();
+        myCar.name = "Jaguar";
+        myCar.color = "Vanta Black"
+        myCar.company = "Verna";
+        myCar.year = 2025;
+        console.log("Name:" + myCar.name);
+        console.log("Color:" + myCar.color);
+        console.log("Company:" + myCar.company);
+        console.log("year:" + myCar.year);
+
+        delete myCar.year;
+        console.log("name" in myCar);
+        console.log("color" in myCar);
+        console.log("company" in myCar);
+        console.log("year" in myCar);
     </script>
 </head>
 <body>
