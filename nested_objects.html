@@ -7,21 +7,31 @@
     <title>Nested Object</title>
 
     <script>
-        let myCar = new Object();
-        myCar.name = "Jaguar";
-        myCar.year = 2025;
-        myCar.color = "Vanta Black";
+        // let myCar = new Object();
+        // myCar.name = "Jaguar";
+        // myCar.year = 2025;
+        // myCar.color = "Vanta Black";
 
-        myCar.stereo = new Object();
-        myCar.stereo.name = "Sony";
-        myCar.stereo.maxVol = 40;
+        // myCar.stereo = new Object();
+        // myCar.stereo.name = "Sony";
+        // myCar.stereo.maxVol = 40;
 
-        console.log(myCar);
-        console.log(myCar.name);
-        console.log(myCar.year);
-        console.log(myCar.color);
-        console.log(myCar.stereo.name);
-        console.log(myCar['stereo']['maxVol']);
+        // console.log(myCar);
+        // console.log(myCar.name);
+        // console.log(myCar.year);
+        // console.log(myCar.color);
+        // console.log(myCar.stereo.name);
+        // console.log(myCar['stereo']['maxVol']);
+
+        // Creating Object Using Object Literel
+
+        let myCar = {name : "Verna", company : "Jaguar",
+        printAll : function(){
+            console.log(myCar.company + ',' + myCar.name);
+        }
+    };
+    myCar.printAll();
+
         </script>
 </head>
 <body>
