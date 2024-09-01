@@ -13,25 +13,41 @@
     // --------------7 Primittive DataTypes--------------
     // nn ss bb u
 
-    let a = null;
-    let b = 232;
-    let c = "JavaScript";
-    let d = Symbol("I am a nice symbol");
-    let e = true; // can be false
-    let f = BigInt("2332342");
-    let g = undefined;
-    console.log(a, b, c, d, e, f, g)
-    console.log(typeof e)
+    // let a = null;
+    // let b = 232;
+    // let c = "JavaScript";
+    // let d = Symbol("I am a nice symbol");
+    // let e = true; // can be false
+    // let f = BigInt("2332342");
+    // let g = undefined;
+    // console.log(a, b, c, d, e, f, g)
+    // console.log(typeof e)
 
-    // Objects
+    // // -----------Objects--------------
 
-    const item = {
-        "JavaScript": true,
-        "Python": false,
-        "Number": 32,
-        "Name": undefined
+    // const item = {
+    //     "JavaScript": true,
+    //     "Python": false,
+    //     "Number": 32,
+    //     "Name": undefined
+    // }
+    // console.log(item["Python"])
+
+    //-------------Conditinal expressions---------------
+
+    // ------------If else block--------------
+
+    let a = prompt("Hey what is your age?");
+    a = Number.parseInt(a) // Converting any string to number
+
+    if(a>0){
+        alert("This is a valid age")
+        console.log(a)
     }
-    console.log(item["Python"])
+    else{
+        alert("This ia an invalid age");
+        console.log(a)
+    }
 
 </script>
 
