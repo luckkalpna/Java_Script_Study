@@ -37,17 +37,27 @@
 
     // ------------If else block--------------
 
-    let a = prompt("Hey what is your age?");
-    a = Number.parseInt(a) // Converting any string to number
+    // let a = prompt("Hey what is your age?");
+    // a = Number.parseInt(a) // Converting any string to number
 
-    if(a>0){
-        alert("This is a valid age")
-        console.log(a)
+    // if(a>0){
+    //     alert("This is a valid age")
+    //     console.log(a)
+    // }
+    // else{
+    //     alert("This ia an invalid age");
+    //     console.log(a)
+    // }
+
+    // ----------------For Loop----------------
+    // Sum of n numbers
+
+    sum  = 0;
+    n = prompt("Enter the value of n:")
+    for(let i=0; i<n; i++){
+        sum += (i+1)
     }
-    else{
-        alert("This ia an invalid age");
-        console.log(a)
-    }
+    console.log("Sum of first " + n + " numbers is " + sum)
 
 </script>
 
