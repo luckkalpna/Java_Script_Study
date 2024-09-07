@@ -106,23 +106,56 @@
 
     //--------------------Arrays-----------------
 
-    let marks_class_12th = [23, 56, 67, 21, 34]
-    console.log(marks_class_12th)
+    // let marks_class_12th = [23, 56, 67, 21, 34]
+    // console.log(marks_class_12th)
 
-    let marks_class_10th = [23, 56, 67, false, "Not Present"]
-    console.log(marks_class_10th)
+    // let marks_class_10th = [23, 56, 67, false, "Not Present"]
+    // console.log(marks_class_10th)
 
-    //------------Methods os an array---------------
+    // //------------Methods os an array---------------
 
-    let num = [1, 2, 3, 34, 4]
-    let b = num.toString() // b is now an string
-    console.log(b, typeof b)
+    // let num = [1, 2, 3, 34, 4]
+    // let b = num.toString() // b is now an string
+    // console.log(b, typeof b)
 
-    let c = num.join("_")
-    console.log(c, typeof c)
+    // let c = num.join("_")
+    // console.log(c, typeof c)
 
-    num.pop()
-    console.log(num)
+    // num.pop()
+    // console.log(num)
+
+    //-----------------For Loop With Arrays---------------------
+
+    let num = [3, 4, 5, 6, 7, 8]
+
+    for(i=0; i<=num.length; i++){
+        console.log(num[i])
+    }
+
+    //-----------------ForEach Loop--------------------
+    num.forEach(element => {
+        console.log(element*element)
+    });
+
+    //--------------Array.From Method----------------
+
+    let name = "Kalpana Rani"
+    let arr = Array.from(name)
+    console.log(arr)
+
+    //----------------For.....of Loop---------------
+
+    for(let i of num){
+        console.log(i)
+    }
+
+
+
+
+
+
+
+
 
 </script>
 
