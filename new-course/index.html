@@ -126,33 +126,55 @@
 
     //-----------------For Loop With Arrays---------------------
 
-    let num = [3, 4, 5, 6, 7, 8]
+    // let num = [3, 4, 5, 6, 7, 8]
 
-    for(i=0; i<=num.length; i++){
-        console.log(num[i])
-    }
+    // for(i=0; i<=num.length; i++){
+    //     console.log(num[i])
+    // }
 
-    //-----------------ForEach Loop--------------------
-    num.forEach(element => {
-        console.log(element*element)
-    });
+    // //-----------------ForEach Loop--------------------
+    // num.forEach(element => {
+    //     console.log(element*element)
+    // });
 
-    //--------------Array.From Method----------------
+    // //--------------Array.From Method----------------
 
-    let name = "Kalpana Rani"
-    let arr = Array.from(name)
-    console.log(arr)
+    // let name = "Kalpana Rani"
+    // let arr = Array.from(name)
+    // console.log(arr)
 
-    //----------------For.....of Loop---------------
+    // //----------------For.....of Loop---------------
 
-    for(let i of num){
-        console.log(i)
-    }
+    // for(let i of num){
+    //     console.log(i)
+    // }
 
+    //------------------Map_Filter_Reduce-----------------
+    // Map Method
+    let arr = [45, 23, 21]
 
+    let a = arr.map((value)=>{
+        console.log(value)
+        return value + 1
+    })
 
+    console.log(a)
 
+    // Filter Method
 
+    let arr2 = [45, 23, 21, 0, 6, 8, 10, 5]
+    let a2 = arr2.filter((a2)=>{
+        return a2<10
+    })
+    console.log(a2)
+
+    // Reduce Method
+
+    let arr3 = [1, 2, 3, 4, 1, 6, 8]
+    let newarr3 = arr3.reduce((h1, h2)=>{
+        return h1 + h2
+    })
+    console.log(newarr3)
 
 
 
