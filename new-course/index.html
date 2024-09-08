@@ -151,32 +151,39 @@
 
     //------------------Map_Filter_Reduce-----------------
     // Map Method
-    let arr = [45, 23, 21]
+    // let arr = [45, 23, 21]
 
-    let a = arr.map((value)=>{
-        console.log(value)
-        return value + 1
-    })
+    // let a = arr.map((value)=>{
+    //     console.log(value)
+    //     return value + 1
+    // })
 
-    console.log(a)
+    // console.log(a)
 
     // Filter Method
 
-    let arr2 = [45, 23, 21, 0, 6, 8, 10, 5]
-    let a2 = arr2.filter((a2)=>{
-        return a2<10
-    })
-    console.log(a2)
+    // let arr2 = [45, 23, 21, 0, 6, 8, 10, 5]
+    // let a2 = arr2.filter((a2)=>{
+       //  return a2<10
+    // })
+    // console.log(a2)
 
     // Reduce Method
 
-    let arr3 = [1, 2, 3, 4, 1, 6, 8]
-    let newarr3 = arr3.reduce((h1, h2)=>{
-        return h1 + h2
-    })
-    console.log(newarr3)
+    // let arr3 = [1, 2, 3, 4, 1, 6, 8]
+    // let newarr3 = arr3.reduce((h1, h2)=>{
+    //    return h1 + h2
+    // })
+    // console.log(newarr3)
 
+    //--------------------Set Timeout Fumction------------------
 
+    alert("Hello")
+    let a = setTimeout(function(){
+        alert("I am inside of setTimeout")
+    }, 2000)
+    clearTimeout(a)
+    console.log(a)
 
 
 </script>
