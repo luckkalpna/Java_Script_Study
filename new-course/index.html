@@ -6,7 +6,14 @@
     <title>JavaScript</title>
 </head>
 <body>
+    <!-- ------------Events Hadling--------------- -->
+
+    <!-- <div onmouseenter="alert('container ke andar mouse gaya')">
+        <button onclick="alert('hello'); let a=2; console.log(a)">click me</button>
+    </div> -->
     <h1>JavaScript New Course</h1>
+
+
 </body>
 
 <script>
@@ -176,14 +183,35 @@
     // })
     // console.log(newarr3)
 
-    //--------------------Set Timeout Fumction------------------
+    //--------------------Set Timeout Function------------------
 
-    alert("Hello")
-    let a = setTimeout(function(){
-        alert("I am inside of setTimeout")
-    }, 2000)
-    clearTimeout(a)
-    console.log(a)
+    // alert("Hello")
+    // let a = setTimeout(function(){
+    //     alert("I am inside of setTimeout")
+    // }, 2000)
+    // clearTimeout(a)
+    // console.log(a)
+
+    //-----------------Callbacks----------------
+
+    function loadScript(src, callback){
+        var script = document.createElement("script");
+        script.src = src;
+        script.onload = function(){
+            console.log("Loaded script with SRC: " + src)
+            callback();
+        }
+        document.body.appendChild(script);
+    }
+
+    function hello(){
+        alert("Hello World!");
+    }
+
+    function goodMorning(){
+        alert("Good Morning");
+    }
+loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js", hello)
 
 
 </script>
