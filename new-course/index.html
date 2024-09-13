@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
+    <style>
+
+    </style>
 </head>
 <body>
     <!-- ------------Events Hadling--------------- -->
@@ -216,38 +219,64 @@
 
 //-------------Promise-----------------
 
-let promise = new Promise(function(resolve, reject){
+// let promise = new Promise(function(resolve, reject){
     // alert("Hello")
-    resolve(56)
-})
-console.log(promise)
+    // resolve(56)
+// })
+// console.log(promise)
 
-let p1 = new Promise((resolve, reject)=>{
-    console.log("Promise is pending")
-    setTimeout(()=>{
+// let p1 = new Promise((resolve, reject)=>{
+    // console.log("Promise is pending")
+    // setTimeout(()=>{
         // console.log("I am promise and I am resolved")
-        resolve(true)
+        // resolve(true)
         // reject(new Error("I am an error"))
-    }, 5000)
-})
+    // }, 5000)
+// })
 
-let p2 = new Promise((resolve, reject)=>{
-    console.log("Promise is pending")
-    setTimeout(()=>{
+// let p2 = new Promise((resolve, reject)=>{
+    // console.log("Promise is pending")
+    // setTimeout(()=>{
         // console.log("I am promise and I am rejected")
         // resolve(true)
-        reject(new Error("I am an error"))
-    }, 5000)
-})
+        // reject(new Error("I am an error"))
+    // }, 5000)
+// })
 
 // console.log((p1, p2))
 
-p1.then((value)=>{
-    console.log(value)
-})
+// p1.then((value)=>{
+    // console.log(value)
+// })
 
-p2.catch((value)=>{
-    console.log("Some error occured in P2")
+// p2.catch((value)=>{
+    // console.log("Some error occured in P2")
+// })
+
+//----------------Promise API--------------------
+
+let p1 = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        resolve("value 1")
+    }, 1000);
+});
+
+let p2 = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        reject(new Error("Error"))
+    }, 2000);
+});
+
+let p3 = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        resolve("value 3")
+    }, 3000);
+});
+
+// let promise_all = Promise.all([p1, p2, p3])
+let promise_all = Promise.allSettled([p1, p2, p3])
+promise_all.then((value)=>{
+    console.log(value)
 })
 
 </script>
