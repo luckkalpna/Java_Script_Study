@@ -281,27 +281,35 @@
 
 //--------------Error Handling-------------
 
-setTimeout(()=>{
-    console.log("Hacking Wifi.... Please wait.....")
-}, 1000)
+// setTimeout(()=>{
+//     console.log("Hacking Wifi.... Please wait.....")
+// }, 1000)
+
+// try{
+//     console.log(rahul)
+// }catch(error){
+//     console.log(error)
+// }
+
+// setTimeout(()=>{
+//     console.log("Fetching username and password.... Please wait.....")
+// }, 2000)
+
+// setTimeout(()=>{
+//     console.log("Hacking Rahul's facebook id.... Please wait.....")
+// }, 3000)
+
+// setTimeout(()=>{
+//     console.log("Username and password of Rahul (+911234567890) fetched")
+// }, 4000)
 
 try{
-    console.log(rahul)
+    console.log(manish)
+    throw new ReferenceError("Manish is not good")
 }catch(error){
-    console.log(error)
+    console.log(error.name)
+    console.log(error.message)
 }
-
-setTimeout(()=>{
-    console.log("Fetching username and password.... Please wait.....")
-}, 2000)
-
-setTimeout(()=>{
-    console.log("Hacking Rahul's facebook id.... Please wait.....")
-}, 3000)
-
-setTimeout(()=>{
-    console.log("Username and password of Rahul (+911234567890) fetched")
-}, 4000)
 
 </script>
 
