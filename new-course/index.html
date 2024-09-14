@@ -255,29 +255,53 @@
 
 //----------------Promise API--------------------
 
-let p1 = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-        resolve("value 1")
-    }, 1000);
-});
+// let p1 = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//         resolve("value 1")
+//     }, 1000);
+// });
 
-let p2 = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-        reject(new Error("Error"))
-    }, 2000);
-});
+// let p2 = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//         reject(new Error("Error"))
+//     }, 2000);
+// });
 
-let p3 = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-        resolve("value 3")
-    }, 3000);
-});
+// let p3 = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//         resolve("value 3")
+//     }, 3000);
+// });
 
-// let promise_all = Promise.all([p1, p2, p3])
-let promise_all = Promise.allSettled([p1, p2, p3])
-promise_all.then((value)=>{
-    console.log(value)
-})
+// // let promise_all = Promise.all([p1, p2, p3])
+// let promise_all = Promise.allSettled([p1, p2, p3])
+// promise_all.then((value)=>{
+//     console.log(value)
+// })
+
+//--------------Error Handling-------------
+
+setTimeout(()=>{
+    console.log("Hacking Wifi.... Please wait.....")
+}, 1000)
+
+try{
+    console.log(rahul)
+}catch(error){
+    console.log(error)
+}
+
+setTimeout(()=>{
+    console.log("Fetching username and password.... Please wait.....")
+}, 2000)
+
+setTimeout(()=>{
+    console.log("Hacking Rahul's facebook id.... Please wait.....")
+}, 3000)
+
+setTimeout(()=>{
+    console.log("Username and password of Rahul (+911234567890) fetched")
+}, 4000)
 
 </script>
 
