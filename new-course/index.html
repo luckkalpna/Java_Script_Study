@@ -303,13 +303,22 @@
 //     console.log("Username and password of Rahul (+911234567890) fetched")
 // }, 4000)
 
-try{
-    console.log(manish)
-    throw new ReferenceError("Manish is not good")
-}catch(error){
-    console.log(error.name)
-    console.log(error.message)
-}
+// try{
+//     console.log(manish)
+//     throw new ReferenceError("Manish is not good")
+// }catch(error){
+//     console.log(error.name)
+//     console.log(error.message)
+// }
+
+//---------------Fetching API-------------------
+
+let p = fetch("https://goweather.herokuapp.com/weather/Ny")
+p.then((value1)=>{
+    return value1.json()
+}).then((value2)=>{
+    console.log(value2)
+})
 
 </script>
 
