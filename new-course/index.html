@@ -313,12 +313,38 @@
 
 //---------------Fetching API-------------------
 
-let p = fetch("https://goweather.herokuapp.com/weather/Ny")
-p.then((value1)=>{
-    return value1.json()
-}).then((value2)=>{
-    console.log(value2)
-})
+// let p = fetch("https://goweather.herokuapp.com/weather/Ny")
+// p.then((value1)=>{
+//     console.log(value1.status)
+//     console.log(value1.ok)
+//     return value1.json()
+// }).then((value2)=>{
+//     console.log(value2)
+// });
+
+//-------------Sevding POST requist-------------
+
+// let options = {
+//     method: "POST",
+//     header: {
+//         "Content-type": "aoolication/json"
+//     },
+//     body: JSON.stringify({
+//         title: "Name",
+//         body: "Anything",
+//         userId: 1100,
+//     }),
+// }
+// fetch("https://jsonplaceholder.tyicode.com/posts", options)
+// .then((response)=> response.json())
+// .then((json)=> console.log(json));
+
+//--------------Cookies----------------
+
+console.log(document.cookie)
+document.name =  "name=kalpna"
+document.name =  "name=rani"
+console.log(document.name)
 
 </script>
 
